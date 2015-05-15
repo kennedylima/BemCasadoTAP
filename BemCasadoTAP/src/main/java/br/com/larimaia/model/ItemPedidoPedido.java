@@ -1,5 +1,5 @@
 
-package model;
+package br.com.larimaia.model;
 
 public class ItemPedidoPedido {
     

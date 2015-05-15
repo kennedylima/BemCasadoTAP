@@ -1,9 +1,6 @@
 
-package Controller;
+package br.com.larimaia.controller;
 
-import DAO.ClienteDAO;
-import model.Cliente;
-import java.util.ArrayList;
 import java.util.List;
 
 

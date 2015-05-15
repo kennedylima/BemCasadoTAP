@@ -1,8 +1,6 @@
 
-package DAO;
+package br.com.larimaia.DAO;
 
-import model.Produto;
-import util.ConexaoUtil;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import br.com.larimaia.model.Produto;
+import br.com.larimaia.util.ConexaoUtil;
 
 public class ProdutoDAO {
   

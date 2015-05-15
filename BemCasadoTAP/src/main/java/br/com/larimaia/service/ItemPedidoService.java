@@ -1,9 +1,9 @@
 
-package service;
+package br.com.larimaia.service;
 
-import model.ItemPedido;
-import DAO.ItemPedidoDAO;
-import exception.ServiceException;
+import br.com.larimaia.DAO.ItemPedidoDAO;
+import br.com.larimaia.exception.ServiceException;
+import br.com.larimaia.model.ItemPedido;
 
 public class ItemPedidoService {
     private final ItemPedidoDAO itempedidoDAO;

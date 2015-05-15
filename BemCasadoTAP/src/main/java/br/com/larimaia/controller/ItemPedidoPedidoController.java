@@ -1,7 +1,7 @@
 
-package Controller;
+package br.com.larimaia.controller;
 
-import DAO.ItemPedido_PedidoDAO;
+import br.com.larimaia.DAO.ItemPedido_PedidoDAO;
 
 
 public class ItemPedidoPedidoController {

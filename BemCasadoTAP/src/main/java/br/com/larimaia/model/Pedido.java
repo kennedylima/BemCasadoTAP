@@ -1,6 +1,5 @@
-package model;
+package br.com.larimaia.model;
 
-import java.util.Date;
 import java.util.List;
 
 public class Pedido {

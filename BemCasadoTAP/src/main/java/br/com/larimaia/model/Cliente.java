@@ -1,4 +1,4 @@
-package model;
+package br.com.larimaia.model;
 
 public class Cliente {
     private Integer id;

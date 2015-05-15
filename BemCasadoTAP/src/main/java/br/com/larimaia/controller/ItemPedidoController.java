@@ -1,14 +1,13 @@
 
-package Controller;
+package br.com.larimaia.controller;
 
-import DAO.ItemPedidoDAO;
-import exception.ServiceException;
-import model.ItemPedido;
-import service.ItemPedidoService;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import br.com.larimaia.DAO.ItemPedidoDAO;
+import br.com.larimaia.exception.ServiceException;
+import br.com.larimaia.model.ItemPedido;
+import br.com.larimaia.service.ItemPedidoService;
 
 
 public class ItemPedidoController {

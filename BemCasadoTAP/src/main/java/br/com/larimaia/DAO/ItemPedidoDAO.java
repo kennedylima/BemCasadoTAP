@@ -1,5 +1,5 @@
 
-package DAO;
+package br.com.larimaia.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import model.ItemPedido;
-import util.ConexaoUtil;
+import br.com.larimaia.model.ItemPedido;
+import br.com.larimaia.util.ConexaoUtil;
 
 
 public class ItemPedidoDAO {

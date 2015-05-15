@@ -1,4 +1,4 @@
-package DAO;
+package br.com.larimaia.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import model.Cliente;
-import model.ItemPedido;
-import model.Pedido;
-import model.TipoEvento;
-import util.ConexaoUtil;
+import br.com.larimaia.model.Cliente;
+import br.com.larimaia.model.ItemPedido;
+import br.com.larimaia.model.Pedido;
+import br.com.larimaia.model.TipoEvento;
+import br.com.larimaia.util.ConexaoUtil;
 import Controller.ItemPedidoController;
 
 public class PedidoDAO {

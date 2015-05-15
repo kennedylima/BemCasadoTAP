@@ -1,8 +1,5 @@
-package model;
+package br.com.larimaia.model;
 
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.scene.control.CheckBox;
-import javax.swing.JCheckBox;
 
 public class ItemPedido {
     private Integer id;
@@ -51,28 +48,4 @@ public class ItemPedido {
         this.idPedido = idpedido;
     }
 
-    private  SimpleBooleanProperty verificado =  new  SimpleBooleanProperty ( false ); 
-   // outras colunas aqui
-
-    public static class Item {
-   private SimpleBooleanProperty checked = new SimpleBooleanProperty(false);
-   // other columns here
-
-    public SimpleBooleanProperty checkedProperty() {
-        return this.checked;
-    }
-
-    public java.lang.Boolean getChecked() {
-        return this.checkedProperty().get();
-    }
-
-    public void setChecked(final java.lang.Boolean checked) {
-        this.checkedProperty().set(checked);
-    }
-
-    // getter/setter for other columns
-
-}
-    
-    
 }
