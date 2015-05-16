@@ -11,12 +11,12 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import br.com.larimaia.controller.ItemPedidoController;
 import br.com.larimaia.model.Cliente;
 import br.com.larimaia.model.ItemPedido;
 import br.com.larimaia.model.Pedido;
 import br.com.larimaia.model.TipoEvento;
 import br.com.larimaia.util.ConexaoUtil;
-import Controller.ItemPedidoController;
 
 public class PedidoDAO {
 
