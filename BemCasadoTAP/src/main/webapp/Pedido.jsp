@@ -1,5 +1,6 @@
 <%@page import="br.com.larimaia.model.Cliente"%>
 <%@page import="br.com.larimaia.service.PedidoService"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +25,7 @@
 	
 	<label>Cliente: </label>
 	<select style ="width:200px;">
-		<% List<Cliente> ListaClientes = PedidoService.buscarClientes();
-			for(Cliente p: ListaClientes){%>
-		<option><<%= p.getNome()%></option>
-		<%} %>
+		
 	</select>
 	<br>
 	
