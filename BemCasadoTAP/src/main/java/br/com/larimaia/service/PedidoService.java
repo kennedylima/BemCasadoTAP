@@ -86,26 +86,19 @@ public class PedidoService {
           return (List<Pedido>) pedidoDAO.buscarTodosPedidos();
     }
     
-    public static ObservableList<Cliente> buscarClientes(){
+    public static List<Cliente> buscarClientes(){
         ClienteDAO cliDAO = new ClienteDAO();
-         ObservableList<Cliente> 
-                relacaoClientes = FXCollections.observableArrayList( cliDAO.buscarCliente());
-        return relacaoClientes;
+        return  cliDAO.buscarCliente();
     }
     
-    public static ObservableList<Produto> buscarProdutos(){
+    public static List<Produto> buscarProdutos(){
         ProdutoDAO pdao = new ProdutoDAO();
-        ObservableList<Produto> 
-                relacaoProduto = FXCollections.observableArrayList( pdao.buscaProduto());
-        return relacaoProduto;
+        return pdao.buscaProduto();
     }
     
-    public static ObservableList<TipoEvento>  buscarTipoEventos(){
+    public static List<TipoEvento>  buscarTipoEventos(){
         TipoEventoDAO tipodao = new TipoEventoDAO();
-        ObservableList<TipoEvento> 
-                relacaoTipoevento = FXCollections.observableArrayList( tipodao.buscarTodosOsTiposDeEventos());
-
-        return relacaoTipoevento;
+        return tipodao.buscarTodosOsTiposDeEventos();
     }
     
     public int setarIdDoPedido(){
