@@ -1,5 +1,4 @@
 
-	
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -17,7 +16,7 @@
 
 <div style="position: absolute; top:100px;left:5px; width: 500px; height:500px; background-color: white;">
 
-	<%System.err.println("Passou aqui JSP");%>
+	
 	<label >Origem do Pedido: </label>
 	<input  type="text"/>
 	<br>
@@ -27,6 +26,7 @@
 	<br>
 	
 	<label>Cliente: </label>
+	<%System.out.println("Passou aqui JSP");%>
 		<select Name = "choiceCLiente" style ="width:200px;">
 			<c:forEach var="cliente" items="${listaCliente}">
 				<option selected value="${cliente.nome}">

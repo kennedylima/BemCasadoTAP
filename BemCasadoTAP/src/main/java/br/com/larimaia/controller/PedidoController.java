@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.JOptionPane;
 
+import br.com.larimaia.DAO.ClienteDAO;
 import br.com.larimaia.exception.ServiceException;
 import br.com.larimaia.model.Cliente;
 import br.com.larimaia.model.Pedido;
@@ -32,8 +33,8 @@ public class PedidoController extends HttpServlet{
 		
 		System.err.println("Passou aqui Controller");
 		List<Cliente> clientes = new ArrayList<>();
-		ClienteService cs = new ClienteService();
-		clientes = cs.listar();
+		ClienteDAO cs = new ClienteDAO();
+		clientes = cs.buscarCliente();
 		req.setAttribute("listaCliente",clientes);
 		RequestDispatcher dispatcher = req.getRequestDispatcher("Pedido.jsp");  
 		dispatcher.forward(req,resp); 
